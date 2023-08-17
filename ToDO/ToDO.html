@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ToDO.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
+    <title>ToDO</title>
+</head>
+<body>
+    <section class="cajon">
+        <div class="p-6 overflow-x-auto shadow-md sm:rounded-lg border">
+            <h1 class="text-3xl font-extrabold text-center">To-DO</h1>
+	        <form class="grid">
+                <label for="Tarea" class="text-2xl font-bold py-6 pb-2">Agregar Tareas:</label>
+		        <input type="text" id="TareaNueva" placeholder="Agrega una tarea...">
+		        <input class="" type="submit" value="Agregar">
+	        </form>
+            <br>
+            <h1 class="text-2xl font-bold">Lista de Tareas:</h1>
+            <h2>(Click para marcar compledas, click con el scroll del mouse para borrar.)</h2>
+            <br>
+            <div class="max-w-2xl overflow-x-auto shadow-md sm:rounded-lg">
+	            <ul id="ListarTareas" class="">
+                    <!-- Aquí se agregarán las tareas -->
+	            </ul>
+            </div>
+        </div>
+    </section>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+<script src="ToDO.js"></script>
+</body>
+</html>
